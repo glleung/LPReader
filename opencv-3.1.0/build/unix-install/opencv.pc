@@ -1,0 +1,14 @@
+# Package Information for pkg-config
+
+prefix=/usr/local
+exec_prefix=${prefix}
+libdir=${exec_prefix}/lib
+includedir_old=${prefix}/include/opencv
+includedir_new=${prefix}/include
+
+Name: OpenCV
+Description: Open Source Computer Vision Library
+Version: 3.1.0
+Libs: -L${exec_prefix}/lib -lopencv_shape -lopencv_stitching -lopencv_objdetect -lopencv_superres -lopencv_videostab -lopencv_calib3d -lopencv_features2d -lopencv_highgui -lopencv_videoio -lopencv_imgcodecs -lopencv_video -lopencv_photo -lopencv_ml -lopencv_imgproc -lopencv_flann -lopencv_viz -lippicv -lopencv_core
+Libs.private: -L/usr/lib/x86_64-linux-gnu -lQt5Core -lQt5Gui -lQt5Widgets -lQt5Test -lQt5Concurrent -lQt5OpenGL -lwebp -ljasper -lImath -lIlmImf -lIex -lHalf -lIlmThread -L/usr/lib -lgdal -ldc1394 -lxine -lv4l1 -lv4l2 -lavcodec -lavformat -lavutil -lswscale -lvtkRenderingOpenGL-6 -lvtkImagingHybrid-6 -lvtkIOImage-6 -lvtkCommonDataModel-6 -lvtkCommonMath-6 -lvtkCommonCore-6 -lvtksys-6 -lvtkCommonMisc-6 -lvtkCommonSystem-6 -lvtkCommonTransforms-6 -lvtkCommonExecutionModel-6 -lvtkDICOMParser-6 -lvtkIOCore-6 -lz -lvtkmetaio-6 -ljpeg -lpng -ltiff -lvtkImagingCore-6 -lvtkRenderingCore-6 -lvtkFiltersExtraction-6 -lvtkFiltersCore-6 -lvtkFiltersGeneral-6 -lvtkCommonComputationalGeometry-6 -lvtkFiltersStatistics-6 -lvtkImagingFourier-6 -lvtkalglib-6 -lvtkFiltersGeometry-6 -lvtkFiltersSources-6 -lvtkIOXMLParser-6 -lexpat -lvtkInteractionStyle-6 -lvtkRenderingLOD-6 -lvtkFiltersModeling-6 -lvtkIOPLY-6 -lvtkIOGeometry-6 -lvtkFiltersTexture-6 -lvtkRenderingFreeType-6 -lfreetype -lvtkftgl-6 -lvtkIOExport-6 -lvtkRenderingContext2D-6 -lvtkRenderingGL2PS-6 -lgl2ps -ldl -lm -lpthread -lrt -lGLU -lGL -lSM -lICE -lX11 -lXext -ltbb
+Cflags: -I${includedir_old} -I${includedir_new}

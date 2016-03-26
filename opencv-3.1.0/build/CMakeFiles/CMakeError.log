@@ -1,0 +1,94 @@
+Determining if the system is big endian passed with the following output:
+Change Dir: /home/gloria/Downloads/opencv-3.1.0/build/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec2393517653/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec2393517653.dir/build.make CMakeFiles/cmTryCompileExec2393517653.dir/build
+make[1]: Entering directory `/home/gloria/Downloads/opencv-3.1.0/build/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/gloria/Downloads/opencv-3.1.0/build/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec2393517653.dir/TestEndianess.c.o
+/usr/bin/cc   -fsigned-char -W -Wall -Werror=return-type -Werror=non-virtual-dtor -Werror=address -Werror=sequence-point -Wformat -Werror=format-security -Wmissing-declarations -Wmissing-prototypes -Wstrict-prototypes -Wundef -Winit-self -Wpointer-arith -Wshadow -Wno-narrowing -fdiagnostics-show-option -Wno-long-long -pthread -fomit-frame-pointer -msse -msse2 -mno-avx -msse3 -mno-ssse3 -mno-sse4.1 -mno-sse4.2 -ffunction-sections -fvisibility=hidden  -O3 -DNDEBUG   -o CMakeFiles/cmTryCompileExec2393517653.dir/TestEndianess.c.o   -c /home/gloria/Downloads/opencv-3.1.0/build/CMakeFiles/CMakeTmp/TestEndianess.c
+Linking C executable cmTryCompileExec2393517653
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec2393517653.dir/link.txt --verbose=1
+/usr/bin/cc     -fsigned-char -W -Wall -Werror=return-type -Werror=non-virtual-dtor -Werror=address -Werror=sequence-point -Wformat -Werror=format-security -Wmissing-declarations -Wmissing-prototypes -Wstrict-prototypes -Wundef -Winit-self -Wpointer-arith -Wshadow -Wno-narrowing -fdiagnostics-show-option -Wno-long-long -pthread -fomit-frame-pointer -msse -msse2 -mno-avx -msse3 -mno-ssse3 -mno-sse4.1 -mno-sse4.2 -ffunction-sections -fvisibility=hidden  -O3 -DNDEBUG    CMakeFiles/cmTryCompileExec2393517653.dir/TestEndianess.c.o  -o cmTryCompileExec2393517653 -rdynamic 
+make[1]: Leaving directory `/home/gloria/Downloads/opencv-3.1.0/build/CMakeFiles/CMakeTmp'
+
+TestEndianess.c:
+/* A 16 bit integer is required. */
+typedef unsigned short cmakeint16;
+
+/* On a little endian machine, these 16bit ints will give "THIS IS LITTLE ENDIAN."
+   On a big endian machine the characters will be exchanged pairwise. */
+const cmakeint16 info_little[] =  {0x4854, 0x5349, 0x4920, 0x2053, 0x494c, 0x5454, 0x454c, 0x4520, 0x444e, 0x4149, 0x2e4e, 0x0000};
+
+/* on a big endian machine, these 16bit ints will give "THIS IS BIG ENDIAN."
+   On a little endian machine the characters will be exchanged pairwise. */
+const cmakeint16 info_big[] =     {0x5448, 0x4953, 0x2049, 0x5320, 0x4249, 0x4720, 0x454e, 0x4449, 0x414e, 0x2e2e, 0x0000};
+
+#ifdef __CLASSIC_C__
+int main(argc, argv) int argc; char *argv[];
+#else
+int main(int argc, char *argv[])
+#endif
+{
+  int require = 0;
+  require += info_little[argc];
+  require += info_big[argc];
+  (void)argv;
+  return require;
+}
+
+
+Determining if the include file linux/videodev.h exists failed with the following output:
+Change Dir: /home/gloria/Downloads/opencv-3.1.0/build/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec800833571/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec800833571.dir/build.make CMakeFiles/cmTryCompileExec800833571.dir/build
+make[1]: Entering directory `/home/gloria/Downloads/opencv-3.1.0/build/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/gloria/Downloads/opencv-3.1.0/build/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec800833571.dir/CheckIncludeFile.c.o
+/usr/bin/cc   -fsigned-char -W -Wall -Werror=return-type -Werror=non-virtual-dtor -Werror=address -Werror=sequence-point -Wformat -Werror=format-security -Wmissing-declarations -Wmissing-prototypes -Wstrict-prototypes -Wundef -Winit-self -Wpointer-arith -Wshadow -Wno-narrowing -fdiagnostics-show-option -Wno-long-long -pthread -fomit-frame-pointer -msse -msse2 -mno-avx -msse3 -mno-ssse3 -mno-sse4.1 -mno-sse4.2 -ffunction-sections -fvisibility=hidden  -O3 -DNDEBUG   -o CMakeFiles/cmTryCompileExec800833571.dir/CheckIncludeFile.c.o   -c /home/gloria/Downloads/opencv-3.1.0/build/CMakeFiles/CMakeTmp/CheckIncludeFile.c
+/home/gloria/Downloads/opencv-3.1.0/build/CMakeFiles/CMakeTmp/CheckIncludeFile.c:1:28: fatal error: linux/videodev.h: No such file or directory
+ #include <linux/videodev.h>
+                            ^
+compilation terminated.
+make[1]: *** [CMakeFiles/cmTryCompileExec800833571.dir/CheckIncludeFile.c.o] Error 1
+make[1]: Leaving directory `/home/gloria/Downloads/opencv-3.1.0/build/CMakeFiles/CMakeTmp'
+make: *** [cmTryCompileExec800833571/fast] Error 2
+
+
+Determining if the include file sys/videoio.h exists failed with the following output:
+Change Dir: /home/gloria/Downloads/opencv-3.1.0/build/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec2190957507/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec2190957507.dir/build.make CMakeFiles/cmTryCompileExec2190957507.dir/build
+make[1]: Entering directory `/home/gloria/Downloads/opencv-3.1.0/build/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/gloria/Downloads/opencv-3.1.0/build/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec2190957507.dir/CheckIncludeFile.c.o
+/usr/bin/cc   -fsigned-char -W -Wall -Werror=return-type -Werror=non-virtual-dtor -Werror=address -Werror=sequence-point -Wformat -Werror=format-security -Wmissing-declarations -Wmissing-prototypes -Wstrict-prototypes -Wundef -Winit-self -Wpointer-arith -Wshadow -Wno-narrowing -fdiagnostics-show-option -Wno-long-long -pthread -fomit-frame-pointer -msse -msse2 -mno-avx -msse3 -mno-ssse3 -mno-sse4.1 -mno-sse4.2 -ffunction-sections -fvisibility=hidden  -O3 -DNDEBUG   -o CMakeFiles/cmTryCompileExec2190957507.dir/CheckIncludeFile.c.o   -c /home/gloria/Downloads/opencv-3.1.0/build/CMakeFiles/CMakeTmp/CheckIncludeFile.c
+/home/gloria/Downloads/opencv-3.1.0/build/CMakeFiles/CMakeTmp/CheckIncludeFile.c:1:25: fatal error: sys/videoio.h: No such file or directory
+ #include <sys/videoio.h>
+                         ^
+compilation terminated.
+make[1]: Leaving directory `/home/gloria/Downloads/opencv-3.1.0/build/CMakeFiles/CMakeTmp'
+make[1]: *** [CMakeFiles/cmTryCompileExec2190957507.dir/CheckIncludeFile.c.o] Error 1
+make: *** [cmTryCompileExec2190957507/fast] Error 2
+
+
+Determining if the include file ffmpeg/avformat.h exists failed with the following output:
+Change Dir: /home/gloria/Downloads/opencv-3.1.0/build/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec2324907238/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec2324907238.dir/build.make CMakeFiles/cmTryCompileExec2324907238.dir/build
+make[1]: Entering directory `/home/gloria/Downloads/opencv-3.1.0/build/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/gloria/Downloads/opencv-3.1.0/build/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec2324907238.dir/CheckIncludeFile.c.o
+/usr/bin/cc   -fsigned-char -W -Wall -Werror=return-type -Werror=non-virtual-dtor -Werror=address -Werror=sequence-point -Wformat -Werror=format-security -Wmissing-declarations -Wmissing-prototypes -Wstrict-prototypes -Wundef -Winit-self -Wpointer-arith -Wshadow -Wno-narrowing -fdiagnostics-show-option -Wno-long-long -pthread -fomit-frame-pointer -msse -msse2 -mno-avx -msse3 -mno-ssse3 -mno-sse4.1 -mno-sse4.2 -ffunction-sections -fvisibility=hidden  -O3 -DNDEBUG   -o CMakeFiles/cmTryCompileExec2324907238.dir/CheckIncludeFile.c.o   -c /home/gloria/Downloads/opencv-3.1.0/build/CMakeFiles/CMakeTmp/CheckIncludeFile.c
+/home/gloria/Downloads/opencv-3.1.0/build/CMakeFiles/CMakeTmp/CheckIncludeFile.c:1:29: fatal error: ffmpeg/avformat.h: No such file or directory
+ #include <ffmpeg/avformat.h>
+                             ^
+compilation terminated.
+make[1]: Leaving directory `/home/gloria/Downloads/opencv-3.1.0/build/CMakeFiles/CMakeTmp'
+make[1]: *** [CMakeFiles/cmTryCompileExec2324907238.dir/CheckIncludeFile.c.o] Error 1
+make: *** [cmTryCompileExec2324907238/fast] Error 2
+
+

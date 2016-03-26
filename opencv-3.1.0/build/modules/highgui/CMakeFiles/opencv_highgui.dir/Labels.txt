@@ -1,0 +1,41 @@
+# Target labels
+ Main
+ opencv_highgui
+ Module
+# Source files and their labels
+/home/gloria/Downloads/opencv-3.1.0/modules/highgui/include/opencv2/highgui.hpp
+ Main
+ opencv_highgui
+ Module
+/home/gloria/Downloads/opencv-3.1.0/modules/highgui/include/opencv2/highgui/highgui.hpp
+ Main
+ opencv_highgui
+ Module
+/home/gloria/Downloads/opencv-3.1.0/modules/highgui/include/opencv2/highgui/highgui_c.h
+ Main
+ opencv_highgui
+ Module
+/home/gloria/Downloads/opencv-3.1.0/modules/highgui/src/window.cpp
+ Main
+ opencv_highgui
+ Module
+/home/gloria/Downloads/opencv-3.1.0/modules/highgui/src/window_QT.cpp
+ Main
+ opencv_highgui
+ Module
+/home/gloria/Downloads/opencv-3.1.0/modules/highgui/src/window_QT.h
+ Main
+ opencv_highgui
+ Module
+/home/gloria/Downloads/opencv-3.1.0/build/modules/highgui/qrc_window_QT.cpp
+ Main
+ opencv_highgui
+ Module
+/home/gloria/Downloads/opencv-3.1.0/modules/highgui/src/precomp.hpp
+ Main
+ opencv_highgui
+ Module
+/home/gloria/Downloads/opencv-3.1.0/build/cvconfig.h
+/home/gloria/Downloads/opencv-3.1.0/build/opencv2/opencv_modules.hpp
+/home/gloria/Downloads/opencv-3.1.0/build/modules/highgui/opencv_highgui_automoc.cpp
+/home/gloria/Downloads/opencv-3.1.0/modules/highgui/src/window_QT.qrc
