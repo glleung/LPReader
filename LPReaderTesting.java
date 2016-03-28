@@ -19,7 +19,7 @@ public class LPReaderTesting{
 			readInvalidPlate(); //no words plate
 			readValidPlate(); //license plate with letters/numbers
 
-			//update databse unit tests
+			//update database unit tests
 			plateDNE(); //cannot find plate in system
 			plateNoFunds(); //plate found, insufficient funds
 			plateFunds(); //plate found, sufficient funds

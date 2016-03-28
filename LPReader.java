@@ -180,6 +180,7 @@ public class LPReader
           // e.printStackTrace();
           System.exit(1);
         }  
+        // System.out.println(plateChars);
         return plateChars;
 		  
 	  }
